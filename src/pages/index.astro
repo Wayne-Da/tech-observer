@@ -20,7 +20,7 @@ const posts = (await getCollection('posts'))
         <ul class="post-list">
           {posts.map((post) => (
             <li>
-              <a href={`${import.meta.env.BASE_URL}posts/${post.id}`} class="post-card">
+              <a href={`${import.meta.env.BASE_URL}/posts/${post.id}`} class="post-card">
                 <h2 class="post-card-title">{post.data.title}</h2>
                 <p class="post-card-meta">
                   {post.data.publishDate.toLocaleDateString('zh-TW', {
